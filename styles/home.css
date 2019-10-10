@@ -163,6 +163,10 @@ ul img{
       padding-top: 1vw;
   }
 
+  .other-content a{
+      font-size: 1vw;
+  }
+
 #second h2{
     text-align: center;
     padding-top: 3vw;
@@ -236,3 +240,6 @@ ul img{
     width: 100%;
 }
 
+#footer p{
+    font-size: 0.9vw;
+}
