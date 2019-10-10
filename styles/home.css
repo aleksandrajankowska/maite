@@ -121,7 +121,7 @@ ul img{
     text-align: center;
     z-index: 2;
     color: black;
-    padding-top: 38vw;
+    top: 90%;
   }
 
   #down, #down2{
