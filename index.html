@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <title>Maïté Côté</title>
+        <link rel="icon" type="image/x-icon" href="data/logo.png" />
+        <link rel="stylesheet" type="text/css" href="styles/home.css">
+        <link rel="stylesheet" href="libraries/aos-master/dist/aos.css" />
+        <script src="libraries/jquery-3.4.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="/libraries/jquery.slidereveal.min.js"></script>
+        <script src="scripts/slider.js"></script>
+        <script src="/scripts/p5.min.js"></script>
+        <script src="/scripts/preload.js"></script>
+        <style>
+            html, body, a{
+                color: black;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+            
+            footer{
+                bottom:0;
+                position: absolute;
+            }
+        </style>
+	</head>
+	<body>
+			<header>
+                <ul id="nav">
+                    <a href="index.html"><img style="width: 1.5vw;" id="cart" src="data/home.png"></a>
+                    <li class="header"><a href="pages/about.html">about</a>
+                    <li class="header"><a href="#">shop</a>
+                        <ul>
+                            <br>
+                            <li class="second"><a href="pages/high-end.html">high end</a></li>
+                            <li class="second"><a href="pages/cosima.html">cosima</a></li>
+                            <li class="second"><a href="pages/eco-friendly.html">eco-friendly</a></li>
+                        </ul>
+                    </li>
+                    <img id="logo" style="vertical-align:middle"  src="data/logo-name.png" alt="logo" />
+                    <li class="header"><a href="#">media</a>
+                        <ul>
+                            <br>
+                            <li class="second"><a href="#">videos</a></li>
+                            <li class="second"><a href="#">blogs</a></li>
+                            <li class="second"><a href="#">events</a></li>
+                        </ul>
+                        </li>
+                    <li class="header"><a href="#">socials</a></li>
+                    
+                    <a href="#"><img style="width: 1.5vw;" id="cart" src="data/shopping-cart.png"></a>
+                </ul>
+                <!-- <div id="name">
+                    <h1>Maïté Côté</h1> 
+                </div> -->
+            </header>
+            
+			<main>
+                <div id ="first">
+                    <div class="container">
+    	                <div class="other-content">
+                            <h2>About My Work</h2>
+                            <p>Lorem ipsum dolor sit amet, timeam inciderint referrentur in pro, dicta voluptatum cu quo, exerci regione mei ne. Duo essent commune quaerendum ad, iriure accumsan vim cu. Ea eirmod volumus ocurreret pro. </p>
+                            <a href="#">VIEW ALL WORK</a>
+                        </div>
+                        <div class="other-content">
+                            <div class="scroll">
+                                <img id="down" src="https://cdn.glitch.com/620d27ec-372e-4a37-943c-fff5f5a90b1f%2Fdownicon.png?v=1564236364160">
+                            </div>
+                        </div>
+
+    	                <div class="slide show" style="background-image: url('data/portfoliowork/naked-fit.png');"></div>
+    	                <div class="slide" style="background-image: url('data/portfoliowork/gun-fit.png');"></div>
+                        <div class="slide" style="background-image: url('data/portfoliowork/paintedw-fit.png');"></div>
+                        <div class="slide" style="background-image: url('data/portfoliowork/girlparrot-fit.png');"></div>
+                    </div>
+                </div>
+
+                <div id ="second">
+                    <h2>Shop Collections</h2>
+                    <div id="collections">
+                        <img src="data/placeholder.jpg" style="float: left;">
+                        <img src="data/placeholder.jpg">
+                        <img src="data/placeholder.jpg" style="float: right;">
+                    </div>
+                </div>
+
+                <div id = "third">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="data/maite.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div id = "fourth">
+                    <div id ="second">
+                        <h2>Customer Favorites</h2>
+                    <div id="collections">
+                        <img src="data/placeholder.jpg" style="float: left;">
+                        <img src="data/placeholder.jpg">
+                        <img src="data/placeholder.jpg" style="float: right;">
+                    </div>
+                    </div>
+
+                </div>
+
+                <div id="footer">
+                    <div id="follow" style="float: left;">
+                        <p>Follow us @</p>
+                        <div id="socials">
+                            <a href = "https://www.facebook.com/maite.cote" target="_blank"><img src="data/social icons/facebook.png"></a>
+                            <a href = "https://www.instagram.com/paintedaydreams/" target="_blank"><img src="data/social icons/insta.png"></a>
+                            <a href = "https://twitter.com/cote_maite" target="_blank"><img src="data/social icons/twitter.png"></a>
+                            <a href = "mailto:maitecote1@gmail.com" target="_blank"><img src="data/social icons/mail.png"></a>
+                        </div>
+                    </div>
+                    <div id="contact-foot">
+                        <p><a href="pages/contact-us.html">Contact Us</a></p>
+                        <p>Subscribe</p>
+                    </div>
+                    <div id="questions" style="float: right;">
+                        <p>FAQ</p>
+                        <p>Shipping</p>
+                        <p><a href="pages/returns.html">Returns & Exchanges</a></p>
+                    </div>
+                </div>
+            </main>
+
+            <script src="libraries/aos-master/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1000,
+                });
+            </script>
+            <script>
+                function cycleBackgrounds() {
+    	            var index = 0;
+    	        $imageEls = $('.container .slide'); // Get the images to be cycled.
+    	        setInterval(function () {
+    		        // Get the next index.  If at end, restart to the beginning.
+    		        index = index + 1 < $imageEls.length ? index + 1 : 0;
+    		        // Show the next image.
+    		        $imageEls.eq(index).addClass('show');
+    		        // Hide the previous image.
+    		        $imageEls.eq(index - 1).removeClass('show');
+    	        }, 5000);
+            };
+            // Document Ready.
+            $(function () {
+    	        cycleBackgrounds();
+            });
+
+            $("#down").click(function() {
+                $('html,body').animate({
+                    scrollTop: $("#second").offset().top},
+                        'slow');
+            });
+            </script>
+    </body>
+    <footer>
+    </footer>
+</html>
