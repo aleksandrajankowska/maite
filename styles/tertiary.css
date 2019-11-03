@@ -1,0 +1,33 @@
+@font-face{
+    font-family: DolceVita;
+    src: url(../fonts/dolce_vita-webfont.woff);
+}
+
+
+#container{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2vw;
+}
+
+#container h2{
+    font-size: 2.4vw;
+    font-weight: 300;
+    font-family: DolceVita;
+    letter-spacing: 0.3vw;
+
+}
+
+#container p{
+    font-size: 0.8vw;
+    font-weight: 300;
+    margin-top: 0vw;
+    line-height: 1.3vw;
+    margin-bottom: 5vw;
+}
+
+
+h3{
+    font-weight: 400;
+    margin-top: -1vw;
+}

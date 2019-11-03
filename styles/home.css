@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
 
+@font-face{
+    font-family: DolceVita;
+    src: url(../fonts/dolce_vita-webfont.woff);
+}
+
 html, body {
     margin:0;
     padding:0;
@@ -78,10 +83,6 @@ a{
     text-decoration:none;
 }
 
-a:hover{
-    font-weight: 600;
-}
-
 ul img{
     width: 4vw;
 }
@@ -126,6 +127,13 @@ ul img{
 
   #down, #down2{
       width: 1.2vw;
+  }
+
+  h2{
+    font-size: 2.4vw;
+    font-weight: 300;
+    font-family: DolceVita;
+    letter-spacing: 0.3vw;
   }
 
   #down2{
@@ -221,10 +229,6 @@ ul img{
     margin-bottom: 3vw;
 }
 
-#third{
-    padding-top: 5vw;
-}
-
 .scroll{
     text-align: center;
     margin-top: 2em;
@@ -238,6 +242,7 @@ ul img{
     height: 40vw;
     overflow: hidden;
     width: 100%;
+    padding-top: 5vw;
 }
 
 #footer p{

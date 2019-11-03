@@ -2,7 +2,7 @@
 <html lang="en, fr">
 	<head>
 		<meta charset="UTF-8">
-        <title>Maïté Côté | Returns & Exchanges</title>
+        <title>Maïté Côté | Videos</title>
         <link rel="icon" type="image/x-icon" href="../data/logo.png" />
         <link rel="stylesheet" type="text/css" href="../styles/home.css">
         <link rel="stylesheet" type="text/css" href="../styles/secondary.css">
@@ -15,15 +15,12 @@
         <script src="/scripts/preload.js"></script>
         <style>
             html, body, a{
-                overflow: hidden;
                 color: black;
             }
 
-            #footer{
-                position:absolute;
+            footer{
                 bottom:0;
-                width:100%;
-                height:10vw;   /* Height of the footer */
+                position: absolute;
             }
         </style>
 	</head>
@@ -57,11 +54,19 @@
             </header>
             
 			<main>
+                
                 <div id="container">
-                    <h2 data-aos="fade-right">Returns & Exchanges</h2>
-                    <p data-aos="fade-up">While we hope that you will love your merchandise if for any reason you are unsatisfied with your purchase, we will gladly exchange or provide store credit for your unworn/unwashed items within 30 days of the delivery date. <br><br> We do not offer refunds.Items that are worn, washed or altered including items returned with deodorant, makeup, smoke, perfume and/or stains.- Items without tags, this includes liners on all bikini bottoms.- Exchanges received after 30 days of the original shipment date.<br><br>Contact us for the return address of items at email@gmail.com</p>
+                    <div class="vid">
+                        <iframe title="vimeo-player" src="https://player.vimeo.com/video/238891436" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="vid">
+                        <video autoplay muted loop>
+                            <source src="../data/maite.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
-                <div id="footer">
+
+                <div id="footer" style="margin-top: 5vw;">
                     <div id="follow" style="float: left;">
                         <p>Follow us @</p>
                         <div id="socials">
@@ -82,7 +87,6 @@
                     </div>
                 </div>
             </main>
-
             <script src="../libraries/aos-master/dist/aos.js"></script>
             <script>
                 AOS.init({

@@ -1,3 +1,10 @@
+@font-face{
+    font-family: DolceVita;
+    src: url(../fonts/dolce_vita-webfont.woff);
+
+}
+
+
 #container{
     width: 70%;
     margin: 0 auto;
@@ -5,32 +12,55 @@
 }
 
 #container img{
-    width: 25vw;
+    width: 30vw;
     display: inline;
     position: relative;
 }
 
 #container h2{
     /* text-transform: uppercase; */
-    font-size: 3vw;
+    font-size: 2.4vw;
     font-weight: 300;
-    margin-top: 0;
+    margin-top: -0.2vw;
     display: inline;
     position: absolute;
+    font-family: DolceVita;
+    letter-spacing: 0.3vw;
+
 }
 
 #container p{
     display: inline;
     position: absolute;
     margin-right: 15%;
-    font-size: 1vw;
-    line-height: 1.5vw;
-    font-weight: 200;
-    margin-top: 5vw;
+    font-size: 0.8vw;
+    /* line-height: 1.5vw; */
+    font-weight: 300;
+    margin-top: 3vw;
+    line-height: 1.3vw;
 }
 
 #container h2, #container p{
     margin-left: 4vw;
+}
+
+.vid {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.vid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.vid video{
+    margin-top: -30vw;
 }
 
 #contact input{
@@ -60,6 +90,7 @@ input:focus,
 textarea:focus {
   outline: none;
 }
+
 
 
 
