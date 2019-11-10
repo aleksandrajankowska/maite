@@ -106,10 +106,10 @@ ul img{
     top: 12vw;
     left: 8vw;
     width: 21vw;
-    height: 18vw;
+    height: 20vw;
     text-align: center;
     z-index: 3;
-    padding: 30px;
+    padding: 20px;
     color: black;
     background-color: #fffaf5;
     box-shadow: 0 0 20px rgba(0,0,0,0.4); 
@@ -117,8 +117,8 @@ ul img{
 
   .container .other-content:nth-of-type(2){
     position: relative;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    /* margin-left: 10vw;
+    margin-right: 10vw; */
     text-align: center;
     z-index: 2;
     color: black;
@@ -163,12 +163,11 @@ ul img{
   }
 
   .other-content p{
-      padding-left: 2vw;
-      padding-right: 2vw;
+      padding-left: 0.5vw;
+      padding-right: 0.5vw;
       line-height: 1.5vw;
-      font-size: 0.8vw;
-      padding-bottom: 1.8vw;
-      padding-top: 1vw;
+      font-size: 0.7vw;
+      padding-bottom: 0.7vw;
   }
 
   .other-content a{
